@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encuesta McDonald's</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h1 id="title">Encuesta de McDonald's</h1>
+
+    <div class="logo">
+      <img src="https://chandigarhofficial.com/wp-content/uploads/2018/11/Mcdonals-Logo.png" alt="Logo McDonald's" width="200px">
+    </div>
+
+    <p id="description">
+      Queremos conocer tu experiencia en McDonald's. Contanos qué te gusta, qué mejorarías y qué producto no puede faltar
+    </p>
+
+    <form id="survey-form">
+
+      <label id="name-label" for="name">Nombre completo:</label><br>
+      <input type="text" id="name" name="name" required placeholder="Tu nombre y apellido"><br><br>
+
+      <label id="email-label" for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com"><br><br>
+
+      <label id="number-label" for="number">Edad (opcional):</label><br>
+      <input type="number" id="number" name="number" placeholder="Edad" min="8" max="110"><br><br>
+
+      <label for="dropdown">¿Cada cuánto visitás McDonald's?</label><br>
+      <select id="dropdown" name="frecuencia">
+        <option value="semanal">Semanalmente</option>
+        <option value="mensual">Mensualmente</option>
+        <option value="ocasional">De vez en cuando</option>
+      </select><br><br>
+
+      <p>¿Recomendarías McDonald's a tus amigos?</p>
+      <label><input type="radio" name="recomienda" value="si" /> Sí</label><br>
+      <label><input type="radio" name="recomienda" value="no" /> No</label><br><br>
+
+      <p>¿Cuál es tu comida favorita?</p>
+      <label><input type="radio" name="favorito" value="Hamburguesas"> Hamburguesas</label><br>
+      <label><input type="radio" name="favorito" value="Postres"> Postres</label><br>
+      <label><input type="radio" name="favorito" value="Acompañantes">Acompañantes</label><br>
+      <label><input type="radio" name="favorito" value="Desayunos"> Desayunos</label><br>
+      <label><input type="radio" name="favorito" value="Bebidas"> Bebidas</label><br><br>
+
+      <fieldset>
+        <legend>¿En qué países nos visitaste?</legend>
+        <label><input type="checkbox" name="pais" value="Argentina"> Argentina</label><br>
+        <label><input type="checkbox" name="pais" value="Brasil"> Brasil</label><br>
+        <label><input type="checkbox" name="pais" value="México"> México</label><br>
+        <label><input type="checkbox" name="pais" value="Estados Unidos"> Estados Unidos</label><br>
+        <label><input type="checkbox" name="pais" value="España"> España</label><br>
+        <label><input type="checkbox" name="pais" value="Otro"> Otro</label><br>
+      </fieldset><br>
+
+      <label for="recomendacion">¿Qué producto recomendás?</label><br>
+      <input type="text" id="recomendacion" name="recomendacion" placeholder="Ej: Big Mac porque es insuperable"><br><br>
+
+      <label for="sugerencias">¿Tenés alguna sugerencia o comentario?</label><br>
+      <textarea id="sugerencias" name="sugerencias" rows="4" placeholder="Escribí tus ideas, quejas o felicitaciones"></textarea><br><br>
+
+      <button id="submit" type="submit">Enviar</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
+
